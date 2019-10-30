@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Domek</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: royalblue;
+        }
+
+        span {
+            display: block;
+            position: absolute;
+            top: 10vh;
+            left: 10vh;
+            width: 200px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            color: #0d1b33;
+            border: 4px solid #0d1b33;
+            background-color: whitesmoke;
+            font-family: arial;
+        }
+
+        span:hover {
+            background-color: #0d1b33;
+            color: whitesmoke;
+            cursor: pointer;
+
+        }
+
+
+        div {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            transition: 2s;
+        }
+
+        div:nth-of-type(2) {
+            transition-delay: 0.2s;
+        }
+
+        div:nth-of-type(3) {
+            transition-delay: 0.6s;
+        }
+
+        div:nth-of-type(4) {
+            transition-delay: 0.8s;
+        }
+
+        div:nth-of-type(5) {
+            transition-delay: 0.4s;
+        }
+
+        div:nth-of-type(6) {
+            transition-delay: 1s;
+        }
+
+
+
+        span:hover~div:nth-of-type(1) {
+            width: 30vh;
+            height: 30vh;
+            background-color: #fcf5cc;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+        }
+
+        span:hover~div:nth-of-type(2) {
+            width: 21.22vh;
+            height: 21.22vh;
+            top: 39.5%;
+            left: 52.1%;
+            background-color: #454440;
+            transform: rotate(45deg);
+        }
+
+        span:hover~div:nth-of-type(3) {
+            width: 8vh;
+            height: 10vh;
+            background-color: lightskyblue;
+            border: 2px solid white;
+            z-index: 2;
+            top: 52%;
+            left: 51.1%;
+        }
+
+        span:hover~div:nth-of-type(4) {
+            width: 8vh;
+            height: 10vh;
+            background-color: lightskyblue;
+            border: 2px solid white;
+            z-index: 2;
+            top: 52%;
+            left: 59.5%;
+        }
+
+        span:hover~div:nth-of-type(5) {
+            width: 6vh;
+            height: 9vh;
+            top: 39.5%;
+            left: 59.3%;
+            background-color: #422723;
+            z-index: -1;
+        }
+
+        span:hover~div:nth-of-type(6) {
+            width: 10vh;
+            height: 15vh;
+            top: calc(50% + 15vh - 5px);
+            left: 54.8%;
+            background-color: #fff;
+            z-index: 3;
+        }
+
+
+
+
+        /* div:nth-of-type(1) {
+            width: 30vh;
+            height: 30vh;
+            background-color: #fcf5cc;
+            top: 50%;
+            left: 50%;
+            z-index: 1;
+        } */
+
+        /* div:nth-of-type(2) {
+            width: 21.22vh;
+            height: 21.22vh;
+            top: 39.5%;
+            left: 52.1%;
+            background-color: #454440;
+            transform: rotate(45deg);
+        } */
+
+        /* div:nth-of-type(3),
+        div:nth-of-type(4) {
+            width: 8vh;
+            height: 10vh;
+            background-color: lightskyblue;
+            border: 2px solid white;
+            z-index: 2;
+        }
+
+        div:nth-of-type(3) {
+            top: 52%;
+            left: 51.1%;
+        } */
+        /* 
+        div:nth-of-type(4) {
+            top: 52%;
+            left: 59.5%;
+        } */
+
+        /* div:nth-of-type(5) {
+            width: 6vh;
+            height: 9vh;
+            top: 39.5%;
+            left: 59.3%;
+            background-color: #422723;
+            z-index: -1;
+        } */
+
+        /* div:nth-of-type(6) {
+            width: 10vh;
+            height: 15vh;
+            top: calc(50% + 15vh - 5px);
+            left: 54.8%;
+            background-color: #fff;
+            z-index: 3;
+        } */
+    </style>
+
+</head>
+
+<body>
+    <span>BUDUJEMY</span>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>
